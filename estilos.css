@@ -1,0 +1,71 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  
+}
+
+.fondo {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+}
+
+.fondo::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #b5a5ecde;
+}
+
+.formulario {
+  position: relative;
+  width: 700px;
+  background-color: rgb(240, 238, 248);
+}
+
+h1 {
+  position: relative;
+  color: #47369d;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.boton {
+  background-color: rgb(110, 71, 253);
+  border-color: rgb(110, 71, 253);
+}
+
+.boton:hover {
+  background-color: rgb(83, 53, 192);
+}
+
+.boton:not(:disabled):not(:disabled):active {
+  background-color: rgb(67, 42, 155);
+  border-color: rgb(110, 71, 253);
+}
+
+.campo::placeholder {
+  color: rgb(199, 199, 199);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.mensaje_error{
+  color: #db0202;
+  padding: 20px 0;
+  background-color: #f8d9d9;
+}
+
+.hidden {
+  display: none;
+}
